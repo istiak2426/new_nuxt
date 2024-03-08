@@ -2,7 +2,7 @@
   <div class="grid grid-cols-12">
     <div class="h-screen col-span-1 bg-black"><!-- 10% width --></div>
     <div
-      class="h-screen col-span-11 bg-gray-50  "
+      class="h-screen col-span-11 bg-gray-50"
       style="background-color: #f0f2f5"
     >
       <div class="grid grid-cols-12 h-14 border-b shadow-lg">
@@ -32,14 +32,19 @@
         </div>
       </div>
 
+      <br />
+  
       <div
-        class="col-span-12 h-16 mt-10 mx-16 rounded-lg shadow-lg ps-7 flex justify-start items-center font-bold text-lg custom-font"
-        style="background-color: #007c9d; color: white"
+        class="grid grid-cols-12 h-96 rounded-lg mx-8 mt-20"
+        style="background-color: #ffffff"
       >
-        SEO Spider
+        <div
+          class="col-span-12 h-16 mx-16 rounded-lg shadow-lg ps-7 flex justify-start items-center font-bold text-lg custom-font"
+          style="background-color: #007c9d; color: white"
+        >
+          SEO Spider
+        </div>
       </div>
-
-
     </div>
   </div>
 </template>
