@@ -1,9 +1,11 @@
 <template>
   <div class="grid grid-cols-12">
-    <div class="h-screen col-span-1 bg-black"><!-- 10% width --></div>
+    <div class="col-span-1 bg-black" style="height: 200vh">
+      <!-- 10% width -->
+    </div>
     <div
-      class="h-screen col-span-11 bg-gray-50"
-      style="background-color: #f0f2f5"
+      class="col-span-11 bg-gray-50"
+      style="background-color: #f0f2f5; height: 200vh"
     >
       <div class="grid grid-cols-12 h-14 border-b shadow-lg">
         <div
@@ -31,19 +33,80 @@
           Dark Mode
         </div>
       </div>
-
       <br />
-  
       <div
-        class="grid grid-cols-12 h-96 rounded-lg mx-8 mt-20"
-        style="background-color: #ffffff"
+        class="grid grid-cols-12 h-96 rounded-lg mx-8 mt-20 shadow-lg"
+        style="background-color: #ffffff; position: relative"
       >
         <div
-          class="col-span-12 h-16 mx-16 rounded-lg shadow-lg ps-7 flex justify-start items-center font-bold text-lg custom-font"
-          style="background-color: #007c9d; color: white"
+          class="col-12 w-11/12 flex justify-start items-center h-16 mx-16 rounded-lg shadow-lg ps-7 font-bold text-lg"
+          style="
+            background-color: #007c9d;
+            color: white;
+            position: absolute;
+            top: 0%;
+            transform: translateY(-50%);
+            z-index: 10;
+          "
         >
           SEO Spider
         </div>
+      </div>
+
+      <div
+        class="grid grid-cols-12 h-48 rounded-lg mx-8 mt-20 shadow-lg"
+        style="background-color: #ffffff; position: relative"
+      >
+        <div
+          class="col-12 w-11/12 flex justify-start items-center h-16 mx-16 rounded-lg shadow-lg ps-7 font-bold text-lg"
+          style="
+            background-color: #007c9d;
+            color: white;
+            position: absolute;
+            top: 0%;
+            transform: translateY(-50%);
+            z-index: 10;
+          "
+        >
+          Saved Scans (0/0)
+        </div>
+
+        <div
+          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl"
+          style="
+            color: #fb8c00;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            z-index: 10;
+          "
+        >
+          Upgrade your subscription to access the Save functionality.
+        </div>
+
+        <div
+          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl"
+          style="
+            color: #344767;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-50%);
+            z-index: 10;
+          "
+        >
+          No Saved Scans.
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-12 h-72 rounded-lg mx-8 mt-10 shadow-lg"
+        style="background-color: #ffffff; position: relative"
+      >
+
+
+
+
+
       </div>
     </div>
   </div>
