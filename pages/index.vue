@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-12">
     <div class="col-span-1 bg-black" style="height: 200vh">
-      <!-- 10% width -->
+
     </div>
     <div
       class="col-span-11 bg-gray-50"
@@ -50,6 +50,38 @@
           "
         >
           SEO Spider
+        </div>
+
+        <div
+          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl 
+      
+          "
+          style="
+            color: #fb8c00;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            z-index: 10;
+          "
+        >
+          <div class="mb-4 w-full md:w-1/3">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter full URL (e.g. https://www.example.com)"
+              class="form-input w-full rounded-md"
+            />
+          </div>
+          <div class="mb-4 w-full md:w-1/6">
+            <button
+              type="submit"
+              class=" text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+              style="background-color: #409DB6;"
+            >
+              ANALYZE
+            </button>
+          </div>
         </div>
       </div>
 
@@ -101,13 +133,7 @@
       <div
         class="grid grid-cols-12 h-72 rounded-lg mx-8 mt-10 shadow-lg"
         style="background-color: #ffffff; position: relative"
-      >
-
-
-
-
-
-      </div>
+      ></div>
     </div>
   </div>
 </template>
