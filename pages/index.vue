@@ -1,12 +1,19 @@
 <template>
-  <div class="grid grid-cols-12">
-    <div class="col-span-1 bg-black" style="height: 200vh">
+  <!-- full layout  -->
 
-    </div>
+  <div class="grid grid-cols-12">
+    <!-- Menu bar -->
+
+    <div class="col-span-1 bg-black" style="height: 200vh"></div>
+
+    <!-- Rest part -->
+
     <div
       class="col-span-11 bg-gray-50"
       style="background-color: #f0f2f5; height: 200vh"
     >
+      <!-- Topbar -->
+
       <div class="grid grid-cols-12 h-14 border-b shadow-lg">
         <div
           class="col-span-1 flex justify-center items-center h-full"
@@ -33,107 +40,71 @@
           Dark Mode
         </div>
       </div>
-      <br />
-      <div
-        class="grid grid-cols-12 h-96 rounded-lg mx-8 mt-20 shadow-lg"
-        style="background-color: #ffffff; position: relative"
-      >
-        <div
-          class="col-12 w-11/12 flex justify-start items-center h-16 mx-16 rounded-lg shadow-lg ps-7 font-bold text-lg"
-          style="
-            background-color: #007c9d;
-            color: white;
-            position: absolute;
-            top: 0%;
-            transform: translateY(-50%);
-            z-index: 10;
-          "
-        >
-          SEO Spider
-        </div>
 
-        <div
-          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl 
-      
-          "
-          style="
-            color: #fb8c00;
-            position: absolute;
-            top: 30%;
-            transform: translateY(-50%);
-            z-index: 10;
-          "
-        >
-          <div class="mb-4 w-full md:w-1/3">
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="Enter full URL (e.g. https://www.example.com)"
-              class="form-input w-full rounded-md"
-            />
+      <!-- Box-1 -->
+
+      <UContainer class="mt-10 w-full h-56">
+        <UCard class="h-full">
+          <div
+            class="mt-[-45px] bg-[#007c9d] p-5 m-6 rounded-lg shadow-xl text-xl text-white font-bold"
+          >
+            <slot name="header">SEO Spider</slot>
           </div>
-          <div class="mb-4 w-full md:w-1/6">
-            <button
-              type="submit"
-              class=" text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-              style="background-color: #409DB6;"
+
+          <div class="p-4 m-5 width text-xl text-white flex justify-center">
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Enter full URL (e.g. https://www.example.com)"
+                class="form-input rounded-l-lg w-[400px] p-3"
+              />
+              <button
+                type="submit"
+                class="rounded-r-lg text-white text-base font-bold p-[14px] rounded focus:outline-none focus:shadow-outline"
+                style="background-color: #409db6"
+              >
+                ANALYZE
+              </button>
+            </div>
+          </div>
+        </UCard>
+      </UContainer>
+
+      <!-- Box-2 -->
+
+      <UContainer class="mt-10 w-full h-56">
+        <UCard class="h-full">
+          <div
+            class="mt-[-45px] bg-[#007c9d] p-5 m-6 rounded-lg shadow-xl text-xl text-white font-bold"
+          >
+            <slot name="header">Saved Scans (0/0)</slot>
+          </div>
+          <div
+            class="mt-4 font-bold w-11/12 flex justify-center items-center text-2xl text-[#fb8c00]"
+          >
+            <slot name="main-1"
+              >Upgrade your subscription to access the Save functionality.</slot
             >
-              ANALYZE
-            </button>
           </div>
-        </div>
-      </div>
 
-      <div
-        class="grid grid-cols-12 h-48 rounded-lg mx-8 mt-20 shadow-lg"
-        style="background-color: #ffffff; position: relative"
-      >
-        <div
-          class="col-12 w-11/12 flex justify-start items-center h-16 mx-16 rounded-lg shadow-lg ps-7 font-bold text-lg"
-          style="
-            background-color: #007c9d;
-            color: white;
-            position: absolute;
-            top: 0%;
-            transform: translateY(-50%);
-            z-index: 10;
-          "
-        >
-          Saved Scans (0/0)
-        </div>
+          <div
+            class="mt-4 font-bold w-11/12 flex justify-center items-center text-2xl text-[#344767]"
+          >
+            <slot name="main-1">No Saved Scans.</slot>
+          </div>
+        </UCard>
+      </UContainer>
 
-        <div
-          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl"
-          style="
-            color: #fb8c00;
-            position: absolute;
-            top: 40%;
-            transform: translateY(-50%);
-            z-index: 10;
-          "
-        >
-          Upgrade your subscription to access the Save functionality.
-        </div>
+      <!-- Box-3 -->
 
-        <div
-          class="col-12 w-11/12 flex justify-center items-center h-16 mx-16 ps-7 font-bold text-2xl"
-          style="
-            color: #344767;
-            position: absolute;
-            top: 70%;
-            transform: translateY(-50%);
-            z-index: 10;
-          "
-        >
-          No Saved Scans.
-        </div>
-      </div>
 
-      <div
-        class="grid grid-cols-12 h-72 rounded-lg mx-8 mt-10 shadow-lg"
-        style="background-color: #ffffff; position: relative"
-      ></div>
+      <UContainer class="mt-10 w-full h-56">
+        <UCard class="h-full">
+
+        </UCard>
+      </UContainer>
+
+
     </div>
   </div>
 </template>
