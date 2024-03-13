@@ -42,6 +42,25 @@
             </label>
           </div>
         </div>
+
+        <div class="text-xl text-white flex justify-center">
+          <div class="flex items-center w-[900px] h-12 p-3">
+            <span class="ml-2 text-[#FC9A00]"
+              >* Ensure that your site does not have a firewall or cross-origin
+              restrictions blocking the crawler.</span
+            >
+          </div>
+        </div>
+
+        <div class="text-xl text-white flex justify-center ">
+          <div class="flex items-center w-[900px] h-12 p-3 border-solid border-2 border-slate-600">
+            <span class="ml-2 text-[#FC9A00]"
+              >* Ensure that your site does not have a firewall or cross-origin
+              restrictions blocking the crawler.</span
+            >
+          </div>
+        </div>
+
       </UCard>
     </UContainer>
   </div>
