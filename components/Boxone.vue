@@ -26,13 +26,9 @@
         </div>
 
 
-        <div class="p-4 m-5 w- text-xl text-white flex justify-center">
-          <div class="flex items-center">
-            <input
-              type="text"
-              placeholder="Enter full URL (e.g. https://www.example.com)"
-              class="form-input rounded-lg w-[500px] p-3"
-            />
+        <div class="p-4 m-5  text-xl text-white flex justify-center">
+          <div class="flex items-center rounded-lg w-[500px] h-12 p-3 bg-orange-500 ">
+            
 
           </div>
         </div>
