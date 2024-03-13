@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UContainer class="mt-10 w-full h-56">
+    <UContainer class="mt-10 w-full h-96">
       <UCard class="h-full">
         <div
           class="mt-[-45px] bg-[#007c9d] p-5 m-6 rounded-lg shadow-xl text-xl text-white font-bold"
@@ -8,7 +8,7 @@
           <slot name="header">SEO Spider</slot>
         </div>
 
-        <div class="p-4 m-5 width text-xl text-white flex justify-center">
+        <div class="p-4 m-5  text-xl text-white flex justify-center">
           <div class="flex items-center">
             <input
               type="text"
@@ -22,6 +22,18 @@
             >
               ANALYZE
             </button>
+          </div>
+        </div>
+
+
+        <div class="p-4 m-5 w- text-xl text-white flex justify-center">
+          <div class="flex items-center">
+            <input
+              type="text"
+              placeholder="Enter full URL (e.g. https://www.example.com)"
+              class="form-input rounded-lg w-[500px] p-3"
+            />
+
           </div>
         </div>
       </UCard>
