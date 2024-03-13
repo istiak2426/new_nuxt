@@ -33,7 +33,6 @@ export default {
     Boxone,
     Boxtwo,
     Boxthree
-    
   },
 };
 </script>

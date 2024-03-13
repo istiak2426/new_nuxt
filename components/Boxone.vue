@@ -8,7 +8,7 @@
           <slot name="header">SEO Spider</slot>
         </div>
 
-        <div class="p-4 m-5  text-xl text-white flex justify-center">
+        <div class="p-4 m-5 text-xl text-white flex justify-center">
           <div class="flex items-center">
             <input
               type="text"
@@ -25,11 +25,21 @@
           </div>
         </div>
 
-
-        <div class="p-4 m-5  text-xl text-white flex justify-center">
-          <div class="flex items-center rounded-lg w-[500px] h-12 p-3 bg-orange-500 ">
-            
-
+        <div class="p-4 m-5 text-xl text-white flex justify-center">
+          <div
+            class="flex items-center rounded-lg w-[500px] h-12 p-3 border-solid border-2 border-slate-600"
+          >
+            <label class="inline-flex items-center">
+              <input
+                type="checkbox"
+                class="form-checkbox rounded-lg h-5 w-5 text-black"
+              />
+              <span class="ml-2 text-black">Current Page</span>
+            </label>
+            <label class="inline-flex items-center ml-6">
+              <input type="checkbox" class="form-checkbox rounded-lg h-5 w-5" />
+              <span class="ml-2 text-black">Full Website</span>
+            </label>
           </div>
         </div>
       </UCard>
