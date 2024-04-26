@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is about page.
+    This is about page. Hi there.
 
     <nuxt-link to="/">Home</nuxt-link>
 
